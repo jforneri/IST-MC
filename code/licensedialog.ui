@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LicenseDialog</class>
+ <widget class="QDialog" name="LicenseDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>501</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About &amp; License</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>413</x>
+     <y>370</y>
+     <width>71</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>441</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version 0.1&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (C) 2013 Jacopo Forneris&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;jacopo.forneris(@)unito.it&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;http://www.dfs.unito.it/solid&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The current version of the software is ditributed according to the &amp;quot;SCIENTIFIC SOFTWARE OPEN SOURCE ACADEMIC FOR FREE LICENSE&amp;quot;, proposed in http://etsf.grenoble.cnrs.fr/dp/home/scientificsoftware.html.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This choice allows for a free circulation and utilization of the software in the Academic world, under GNU-GPL compatible license, while reserving separate negotiation with the developer for commercial purposes, depending on the revenue of the code exploitation.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The software is free of charge for Academic users, provided that any copy and redistribution of the software is accompanied by the same license and is communicated to the developers. Software modifications proposed by licensees must be proposed to the authors; the intellectual property of the developer must be acknowledged in scientific results, published or presented to conferences, obtained by the software.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>441</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;TERMS AND CONDITIONS OF THE LICENSE&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This agreement between the owners, intended as the employers of the authors, and the authors of the DP software, as mentioned in the copyright notice and in the following referred to as OWNERS and AUTHORS, and the LICENSEE, regulates the use of the DP software, referred to as SOFTWARE and meaning the executables, the objects, the source code, the compilation and installation scripts and the associated documentation files constituting as a whole the DP package.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1. COST and FRAMEWORK&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The SOFTWARE, including the source code, is delivered at NO COST for ACADEMIC or PUBLIC RESEARCH use or use for Non-Commercial and Non-Military purposes solely and leading to open publication of the results with neither withhold of information nor intentional delay in publication. The LICENSEE guarantees that the SOFTWARE or modified versions of SOFTWARE or derivative work based on SOFTWARE is not used for any commercial or profit or military purpose. Other licenses and agreements between the OWNERS, the AUTHORS and the LICENSEE are necessary to regulate commercial or profit use of SOFTWARE or modified versions of SOFTWARE or derivative work based on SOFTWARE or work containing the SOFTWARE or a portion of it.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2. USE&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The LICENSEE is provided with a non-exclusive, royalty-free right to use any part of the SOFTWARE, and to display, publish or otherwise use results of the SOFTWARE in any form.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3. COPY&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The LICENSEE may copy the SOFTWARE in any medium and as many times as he wishes, provided that he keeps intact all the copyright notices, disclaimers of warranty, notices to this License and this License file which has to be considered as integral part of the SOFTWARE.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4. MODIFICATION&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The LICENSEE may study and modify the SOFTWARE provided that the modified SOFTWARE is licensed under the same license and conditions established by the present License, and that the modified files carry notices stating the name of the contributor, the reason and the date of any change. These requirements apply to the modified SOFTWARE as a whole. If identifiable sections of that work are not derived from the SOFTWARE, and can be reasonably considered as independent and separate works in themselves, then this License does not apply to those sections.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5. CONTRIBUTIONS&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The LICENSEE has the faculty, if he wishes, to make available any modified version and derivative work to the AUTHORS and, for further following distribution, to other licensees. The AUTHORS reserve the exclusive right to accept or refuse the contribution and evaluate its weight with respect to the rest. In case of acceptance by the AUTHORS of a contribution, the LICENSEE acquires the status of CONTRIBUTOR. Important accepted contributions with a weight evaluated by the AUTHORS beyond 5% with respect to the rest, give the right to full authorship for the corresponding share of participation to decisions. The AUTHORS agree to a reciprocal acknowledgment and redistribution policy of the CONTRIBUTOR's contribution in a manner similar to as stated in the following paragraph.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6. ACKNOWLEDGEMENT&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;In case of publication in reviews or any other medium, or communication into conferences of results obtained with the SOFTWARE or modified versions of SOFTWARE or derivative work based on SOFTWARE, the LICENSEE agrees to refer adequately and corresponding to the extent the SOFTWARE has been used to produce the result, to the AUTHORS and to the eventual CONTRIBUTORS having provided a new effectively used functionality, by citing key publications, or in suborder by citing the SOFTWARE web site, or in suborder by referring to a private communication from the AUTHORS and eventual CONTRIBUTORS.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;7. FORBIDDEN REDISTRIBUTION IN COMMERCIAL WORLD&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The LICENSEE is not allowed to distribute the SOFTWARE, modified version of the SOFTWARE or derivative works to commercial or profit institutions or any other third parties using the SOFTWARE for commercial or profit purposes. &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;8. FREE REDISTRIBUTION IN ACACEMIC WORLD&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The LICENSEE is allowed to redistribute the SOFTWARE or modified versions of the SOFTWARE to academic and public research institutions or other third parties working in academic or public research institutions and for non-commercial purposes. Redistribution of the SOFTWARE or modified versions of the SOFTWARE or derived work must retain the copyright notices in the top of the source files and of the produced output files. Redistribution of the SOFTWARE or modified versions of the SOFTWARE or derived work must be licensed under the terms of this License and must retain the present License file in the package provided with the distribution. The LICENSEE may not impose any further restrictions of the rights granted herein on the redistributed copies of the SOFTWARE, modified versions of the SOFTWARE and derived work. The LICENSEE is allowed, if he wishes, to charge fees for the physical act of transferring a copy, and/or for offering a warranty protection and/or assistance in the compilation, the installation and the use and/or training of the users.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;9. LICENSE VALIDITY&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The LICENSEE is not required to sign this License. However, if the LICENSEE does not accept this license agreement without any reservation, nothing else grants the LICENSEE's permission to use, copy, study, modify and redistribute the SOFTWARE, modified versions of the SOFTWARE or derivative works. By using, copying, studying, modifying or redistributing the SOFTWARE, the LICENSEE indicates his acceptance of the present License agreement and all its terms and conditions without any reservation. &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;10. LICENSE VIOLATIONS&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The LICENSEE may not use, copy, study, modify and redistribute the SOFTWARE except as expressly provided under this License. Any attempt otherwise to use, copy, study, modify, sublicense or redistribute the SOFTWARE is void, and will automatically terminate the LICENSEE's rights under this License. Any violation of this agreement results in loss of the SOFTWARE license. Further juridical steps are reserved to the Copyright Holders.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;11. JURISDICTION&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This license agreement is not restricted in time and governed by French law. The place of jurisdiction is Paris, France.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;12. NO WARRANTY&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;SINCE IT IS LICENSED FREE OF CHARGE, THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. THE LICENSEE ASSUMES THE ENTIRE RISK AS TO THE QUALITY, THE PERFORMANCES AND THE PROVIDED RESULTS OF THE SOFTWARE. IN CASE THE SOFTWARE PROVES DEFECTIVE, THE LICENSEE ASSUMES ALL THE COSTS OF ALL NECESSARY REPAIRS OR CORRECTIONS. IN NO EVENTS SHALL THE AUTHORS, THE CONTRIBUTORS OR THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, NEGLIGENCE OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR INABILITY TO USE OR ANY OTHER DEALINGS WITH THE SOFTWARE.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>200</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>License</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>LicenseDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

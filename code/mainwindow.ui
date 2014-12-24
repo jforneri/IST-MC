@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1183</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IBriC</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_simsetup">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Simulation Setup</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_quit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>670</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>232</red>
+          <green>0</green>
+          <blue>11</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>232</red>
+          <green>0</green>
+          <blue>11</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>232</red>
+          <green>0</green>
+          <blue>11</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textMessageBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>490</y>
+      <width>341</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sim">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Simulation progress</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_stop">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_resume">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resume</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_saveplot">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Export</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="Plots">
+    <property name="geometry">
+     <rect>
+      <x>393</x>
+      <y>-1</y>
+      <width>771</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Input</string>
+     </attribute>
+     <widget class="QCustomPlot" name="gunn_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>10</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>301</width>
+        <height>161</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="efield_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>301</width>
+        <height>161</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="pdrift_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>180</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>301</width>
+        <height>161</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="ndrift_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>180</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>301</width>
+        <height>161</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="ioniz_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>350</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>301</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="vac_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>350</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>301</width>
+        <height>161</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="tau_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>520</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>120</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="CDF_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>520</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>120</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Simulation</string>
+     </attribute>
+     <widget class="QCustomPlot" name="mc_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>591</width>
+        <height>331</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="histo_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>390</y>
+        <width>341</width>
+        <height>231</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="time_plot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>390</y>
+        <width>341</width>
+        <height>231</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>640</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>650</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>-1</number>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="pageStep">
+       <number>10</number>
+      </property>
+      <property name="value">
+       <number>-1</number>
+      </property>
+      <property name="tracking">
+       <bool>true</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::NoTicks</enum>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show legend</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>660</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Time Axis</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="time_spinBox">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>630</y>
+        <width>62</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_transport">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>201</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_simulation">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>150</y>
+      <width>201</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_radsetup">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Irradiation Setup</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_devsetup">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Device Setup</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_irradiation">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>290</y>
+      <width>201</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Log</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_about">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>680</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>232</red>
+          <green>0</green>
+          <blue>11</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>232</red>
+          <green>0</green>
+          <blue>11</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>232</red>
+          <green>0</green>
+          <blue>11</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <zorder>pushButton_simsetup</zorder>
+   <zorder>pushButton_quit</zorder>
+   <zorder>pushButton_sim</zorder>
+   <zorder>progressBar</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton_stop</zorder>
+   <zorder>pushButton_resume</zorder>
+   <zorder>pushButton_saveplot</zorder>
+   <zorder>Plots</zorder>
+   <zorder>textBrowser_transport</zorder>
+   <zorder>textBrowser_simulation</zorder>
+   <zorder>pushButton_radsetup</zorder>
+   <zorder>pushButton_devsetup</zorder>
+   <zorder>textBrowser_irradiation</zorder>
+   <zorder>label_2</zorder>
+   <zorder>textMessageBox</zorder>
+   <zorder>pushButton_about</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>../qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>pushButton_simsetup</tabstop>
+  <tabstop>pushButton_sim</tabstop>
+  <tabstop>pushButton_stop</tabstop>
+  <tabstop>pushButton_resume</tabstop>
+  <tabstop>pushButton_saveplot</tabstop>
+  <tabstop>textMessageBox</tabstop>
+  <tabstop>pushButton_quit</tabstop>
+  <tabstop>Plots</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_quit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>570</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
